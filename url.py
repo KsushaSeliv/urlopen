@@ -15,4 +15,4 @@ if __name__ == "__main__":
 id = input('id:') #вводим id нужного пользователя 
 print('PLease:') 
 pprint.pprint(i_d(id))
-тут была ошибка я поправил
+
