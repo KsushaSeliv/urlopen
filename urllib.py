@@ -47,18 +47,6 @@ def JsonConsoleWriter(json):
   	  	print('Неизвестная ошибка!');
     else:
   	  resp=json.get('response')
-  	  print(resp);
+  	  print(resp)
 
         
-#JsonConsoleWriter(SendRequestVk(InputVkIds(),"https://api.vk.com/method/users.get?user_ids={id}&fields=nickname,sex,city,site,first_name,last_name,status,online,last_seen&v=5.69"))
-class TestList:
-
-    def test_type_error(self):
-        with pytest.raises(URLError):
-            SendRequestVk("id150534032","https://jjr.jjr.jjr/method/users.get?user_ids={id}&fields=nickname,sex,city,site,first_name,last_name,status,online,last_seen&v=5.69")
-    def test_check1(self):
-        aa=SendRequestVk("id150534032","https://api.vk.com/method/users.get?user_ids={id}&fields=nickname,sex,city,site,first_name,last_name,status,online,last_seen&v=5.69")
-        assert (aa.get('response') != None)
-    def test_check2(self):
-        aa=SendRequestVk("asdasfdfdas","https://api.vk.com/method/users.get?user_ids={id}&fields=nickname,sex,city,site,first_name,last_name,status,online,last_seen&v=5.69")
-        assert (aa.get('error') != None)        
