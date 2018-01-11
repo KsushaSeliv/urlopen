@@ -3,7 +3,7 @@ from urllib.error import URLError
 from urllib.error import HTTPError 
 import json
 import pprint
-import pytest
+
 
 
 def InputVkIds():
